@@ -1,10 +1,8 @@
 # Los productos naturales en la base de datos LOTUS
 
-***
-
 LOTUS es una base de datos abierta creada por el grupo de  ***Quimioinformática y metabolómica computacional*** de la **Universidad Friedich Schiller** en Jena, Alemania; con el propósito de crear un repositorio de moléculas de origen natural disponible para todas las personas que deseasen realizar investigaciones relacionadas con los productos naturales de plantas, hongos y animales, reportando datos de estructuras, nombres científicos, nombres comunes, el organismo en el cual aparece, su taxonomía, propiedades físicas, etcétera. 
 
-> Este repositorio está construido sobre **MongoDB**, es una base de datos ***no relacional*** y está disponible [aquí](https://lotus.naturalproducts.net/)
+> Esta base de datos está construida sobre **MongoDB**, es de tipo ***no relacional*** y está disponible para su consulta [aquí](https://lotus.naturalproducts.net/)
 
 Asimismo, LOTUS cuenta con una API REST para realizar consultas. Se pueden hacer búsquedas de tres maneras diferentes:
 
@@ -13,7 +11,6 @@ Asimismo, LOTUS cuenta con una API REST para realizar consultas. Se pueden hacer
 ---
 
 Se ingresa un código SMILES (una estrategia de abstracción para las estructuras químicas) de la molécula que se quiere buscar por la base de datos. Esta API tiene dos métodos de búsqueda: 1. Usando InChI (Identificador Químico Internacional) como método de coincidencia, y 2. Usando el SMILES como método de coincidencia.
-
 
 - Caso 1: `https://lotus.naturalproducts.net/api/search/exact-structure?type=inchi&smiles=O=C1OC(C(O)=C1O)CO` 
 
@@ -45,7 +42,6 @@ Ejemplo: `https://lotus.naturalproducts.net/api/search/substructure?type=default
 
 # Graficando las moléculas con RDKit y Py3DMol
 
----
 
 **RDKit** es un programa de acceso abierto (Open Source) para quimioinformática y machine learning, desarrollado por Greg Landrum y los contribuidores de la comunidad de RDKit. Este programa permite manipular moléculas, calcular sus propiedades, visualizarlas, compararlas y ejecutar reacciones químicas.
 
